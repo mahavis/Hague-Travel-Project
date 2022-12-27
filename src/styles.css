@@ -29,6 +29,15 @@ body {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.grid.grid-2-columns {
+  grid-gap: 0;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
 .card {
   background: white;
   margin: 30px 0;
@@ -225,5 +234,13 @@ footer a {
 
   section {
     padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
