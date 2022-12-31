@@ -29,8 +29,15 @@ body {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
-.grid.grid-2-columns {
+.card-header.grid {
   grid-gap: 0;
+}
+
+.photos-grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  display: grid;
 }
 
 .embed {
@@ -67,7 +74,7 @@ body {
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-    url("../images/bridge.png");
+    url("../images/hague.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -109,6 +116,7 @@ header a {
   color: #272044;
   padding: 16px 32px;
   display: inline-block;
+  margin-top: 20px;
 }
 
 section {
@@ -178,7 +186,7 @@ footer {
       rgba(39, 32, 68, 0.9),
       rgba(39, 32, 68, 0.9)
     ),
-    url("../images/footer.png");
+    url("../images/footer1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -242,5 +250,9 @@ footer a {
 
   .embed {
     aspect-ratio: 16 / 9;
+  }
+
+  .photos-grid-2-columns {
+    display: none;
   }
 }
