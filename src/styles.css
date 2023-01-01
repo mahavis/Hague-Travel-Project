@@ -33,8 +33,8 @@ body {
   grid-gap: 0;
 }
 
-.photos-grid-2-columns {
-  grid-template-columns: 1fr 1fr;
+.grid grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 10px;
   display: grid;
@@ -252,7 +252,8 @@ footer a {
     aspect-ratio: 16 / 9;
   }
 
-  .photos {
-    display: none;
+  .pinterest-embeds {
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
   }
 }
